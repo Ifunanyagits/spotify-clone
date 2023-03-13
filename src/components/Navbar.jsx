@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import {FaSearch } from 'react-icons/fa'
-import {CgProfile} from 'react-icons/cg'
-import { useStateProvider } from '../utils/StateProvider'
+// import {CgProfile} from 'react-icons/cg'
+// import { useStateProvider } from '../utils/StateProvider'
 
 export default function Navbar() {
-  const [{ userInfo }] = useStateProvider();
+  // const [{ userInfo }] = useStateProvider();
   const navBackground = true;
   return (
     <Container navBackground={navBackground}>
@@ -13,30 +13,29 @@ export default function Navbar() {
         <FaSearch />
         <input type="text" placeholder='Search for artists, songs and ...'/>
       </div>
-      <div className="avatar">
+      {/* <div className="avatar">
         <a href={userInfo?.userUrl}>
           <CgProfile />
           <span>{userInfo?.name}</span>
         </a>
-      </div>
+      </div> */}
     </Container>
   )
 }
 
 const Container = styled.div`
 display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 2rem;
-  height: 15vh;
-  position: sticky;
+  height: 10vh;
   top: 0;
   transition: 0.3s ease-in-out;
   background-color: ${({ navBackground }) =>
-    navBackground ? "#f3f3f3b2" : "none"};
+    navBackground ? "#f3f3f30" : "none"};
   .search__bar {
     background-color: white;
-    width: 30%;
+    width: 70%;
     padding: 0.4rem 1rem;
     border-radius: 2rem;
     display: flex;
@@ -51,7 +50,7 @@ display: flex;
       }
     }
   }
-  .avatar {
+  /* .avatar {
     background-color: #1a1a1a;
     padding: 0.3rem 0.4rem;
     padding-right: 1rem;
@@ -75,5 +74,5 @@ display: flex;
         color: #c7c5c5;
       }
     }
-  }
+  } */
 `;

@@ -80,10 +80,11 @@ max-width: 100vw;
 max-height: 100vh;
 overflow: hidden;
 display: grid;
-grid-template-rows: 85vh 15vh;
+background-color: #E6E6E6;
+grid-template-rows: 90vh 10vh;
 .spotify__body {
   display: grid;
-  grid-template-columns: 15vw 70vw 15vw;
+  grid-template-columns: 20vw 60vw 20vw;
   height: 100%;
   width: 100%;
   background-color: #E6E6E6;
@@ -92,7 +93,7 @@ grid-template-rows: 85vh 15vh;
     width: 100%;
     overflow: auto;
     &::-webkit-scrollbar {
-      width: 0.7rem;
+      width: 0.1rem;
       max-height: 2rem;
       &-thumb {
         background-color: rgba(255, 255, 255, 0.6);

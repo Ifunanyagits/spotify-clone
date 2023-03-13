@@ -35,16 +35,16 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 width: 100vw;
-Height: 100vh;
+height: 100vh;
 background-color: #F4F5FE;
 gap:5rem;
 img{
-    height: 20vh;
+    height: 10vh;
 }
 button {
     padding: 1rem 5rem;
     border-radius: 5rem;
-    background-color: #1ED760;
+    background-color: #080808;
     color: #ffffff;
     border: none;
     font-size: 1.5rem;

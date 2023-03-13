@@ -14,13 +14,15 @@ export default function Footer() {
 }
 
 const Container = styled.div`
-background-color: #FFFFFF;
+background-color: #ffffff;
 height: 100%;
-width: 100%;
-border-top: 1px solid #e9e9e9;
+width: 60%;
+margin-left: 20%;
+bottom: 10px;
 display: grid;
 grid-template-columns: 1fr 2fr 1fr;
 align-items: center;
 justify-content: center;
+border-radius: 10px;
 padding: 0 1rem;
 `;

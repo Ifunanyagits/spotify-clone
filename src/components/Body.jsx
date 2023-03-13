@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import { useStateProvider } from "../utils/StateProvider";
-import { AiFillClockCircle } from "react-icons/ai";
 import { reducerCases } from "../utils/Constants";
 export default function Body({ headerBackground }) {
   const [{ token, selectedPlaylist, selectedPlaylistId }, dispatch] =
@@ -109,9 +108,7 @@ export default function Body({ headerBackground }) {
                 <span>ALBUM</span>
               </div>
               <div className="col">
-                <span>
-                  <AiFillClockCircle />
-                </span>
+                <span>TIME</span>
               </div>
             </div>
             <div className="tracks">
@@ -176,7 +173,9 @@ export default function Body({ headerBackground }) {
 
 const Container = styled.div`
   .playlist {
-    margin: 0 2rem;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 10px;
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -190,9 +189,9 @@ const Container = styled.div`
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      color: #e0dede;
+      color: #383838;
       .title {
-        color: white;
+        color: #1f1f1f;
         font-size: 4rem;
       }
     }
@@ -201,14 +200,15 @@ const Container = styled.div`
     .header-row {
       display: grid;
       grid-template-columns: 0.3fr 3fr 2fr 0.1fr;
-      margin: 1rem 0 0 0;
-      color: #dddcdc;
+      margin: 1rem 0;
+      color: #181818;
       position: sticky;
+      font-weight: 600;
       top: 15vh;
       padding: 1rem 3rem;
       transition: 0.3s ease-in-out;
       background-color: ${({ headerBackground }) =>
-        headerBackground ? "#000000dc" : "none"};
+        headerBackground ? "#e7e7e7dc" : "none"};
     }
     .tracks {
       margin: 0 2rem;
@@ -217,15 +217,18 @@ const Container = styled.div`
       margin-bottom: 5rem;
       .row {
         padding: 0.5rem 1rem;
+        color: #292929;
         display: grid;
         grid-template-columns: 0.3fr 3.1fr 2fr 0.1fr;
         &:hover {
-          background-color: rgba(0, 0, 0, 0.7);
+          border-radius: 20px;
+          background-color: rgba(252, 252, 252, 0.7);
+          box-shadow: 0 0 20px rgb(0 0 0 / 50%);
         }
         .col {
           display: flex;
           align-items: center;
-          color: #dddcdc;
+          color: #2b2a2a;
           img {
             height: 40px;
             width: 40px;

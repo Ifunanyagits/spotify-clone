@@ -32,9 +32,9 @@ const Container = styled.div`
   justify-content: flex-end;
   align-content: center;
   input {
-    width: 15rem;
+    width: 7rem;
     border-radius: 2rem;
-    height: 0.5rem;
+    height: 0.3rem;
     color: #666666;
   }
 `;

@@ -46,7 +46,7 @@ export default function CurrentTrack() {
         </div>
       )}
     </Container>
-  );
+  )
 }
 
 const Container = styled.div`
@@ -64,7 +64,7 @@ const Container = styled.div`
         color: #050505;
       }
       &__track__artists {
-        color: #b3b3b3;
+        color: #383838;
       }
     }
   }

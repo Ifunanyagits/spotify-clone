@@ -51,7 +51,7 @@ overflow: hidden;
     ul {
         list-style-type: none;
         display: flex;
-        color: #000000;
+        color: #202020;
         flex-direction: column;
         gap: 1rem;
         padding: 1rem;
@@ -67,13 +67,16 @@ overflow: hidden;
         li {
             display: flex;
             gap: 1rem;
+            border-radius: 30px;
+            font-weight: 600;
+            padding: 10px;
             cursor: pointer;
             transition: 0.3s ease-in-out;
             &:hover {
                 color: #FFFFFF;
-                padding: 5px;
-                background-color: #000000;
-                border-radius: 5%;
+                padding: 10px;
+                background-color: #1a1a1a;
+                border-radius: 20px;
             }
         }
     }

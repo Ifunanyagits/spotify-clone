@@ -33,8 +33,8 @@ export default function Sidebar() {
 
 
 const Container = styled.div`
-background-color: #FFFFFF;
-color: #000000;
+background-color: #eeeded;
+color: #1d1d1d;
 display: flex;
 flex-direction: column;
 height: 100%;
@@ -59,12 +59,15 @@ width: 100%;
         li {
             display: flex;
             gap: 1rem;
+            border-radius: 30px;
+            font-weight: 600;
+            padding: 10px;
             cursor: pointer;
             transition: 0.3s ease-in-out;
             &:hover {
                 color: #FFFFFF;
-                padding: 5px;
-                background-color: #000000;
+                padding: 10px;
+                background-color: #181818;
                 border-radius: 5%;
             }
         }
