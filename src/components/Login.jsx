@@ -4,7 +4,8 @@ import styled from "styled-components"
 export default function Login() {
     const handleLogin = ()=>{
         const client_id = '4fb00c1aaa3648be8fe712e5673dd668';
-        const redirect_url = "http://localhost:3000";
+        // const redirect_url = "http://localhost:3000";
+        const redirect_url = "https://spotify-clone-zeta-lilac.vercel.app";
         const api_url = 'https://accounts.spotify.com/authorize';
         const response_type = 'token';
         const scope = [
