@@ -2,10 +2,11 @@ import React from 'react'
 import styled from "styled-components"
 
 export default function Login() {
-    const handleClick = ()=>{
+    const handleLogin = ()=>{
         const client_id = '4fb00c1aaa3648be8fe712e5673dd668';
         const redirect_url = "http://localhost:3000";
         const api_url = 'https://accounts.spotify.com/authorize';
+        const response_type = 'token';
         const scope = [
             'user-read-private',
             'user-read-email',
@@ -13,16 +14,17 @@ export default function Login() {
             'user-read-playback-state',
             'user-read-currently-playing',
             'user-read-recently-played',
+            // 'user-read-playback-position',
             'user-top-read',
         ];
         window.location.href = `${api_url}?client_id=${client_id}&redirect_uri=${redirect_url}&scope=${scope.join(
-            ' '
-        )}&response_type=token&show_dialog=true`;
+            " "
+        )}&response_type=${response_type}&show_dialog=true`;
     }
   return (
     <Container>
-        <img src='https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Black.png' alt='Spotify Logo' />
-        <button onClick={handleClick}>Login</button>
+        <img src='https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png' alt='Spotify Logo' />
+        <button onClick={handleLogin}>Login</button>
     </Container>
     )
 }
@@ -34,7 +36,7 @@ align-items: center;
 flex-direction: column;
 width: 100vw;
 Height: 100vh;
-background-color: #1db954;
+background-color: #F4F5FE;
 gap:5rem;
 img{
     height: 20vh;
@@ -42,8 +44,8 @@ img{
 button {
     padding: 1rem 5rem;
     border-radius: 5rem;
-    background-color: #000000;
-    color: #49f585;
+    background-color: #1ED760;
+    color: #ffffff;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
